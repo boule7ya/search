@@ -17,6 +17,8 @@
 		E61B58562390294B009F9561 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E61B58552390294B009F9561 /* NothingFoundCell.xib */; };
 		E6AC7F682395264B00131750 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AC7F672395264B00131750 /* LoadingCell.xib */; };
 		E6B5F297239669740023D6DC /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B5F296239669740023D6DC /* UIImageView+DownloadImage.swift */; };
+		E6B5F29923967D590023D6DC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B5F29823967D590023D6DC /* DetailViewController.swift */; };
+		E6B5F29B239697260023D6DC /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B5F29A239697260023D6DC /* DimmingPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E61B58552390294B009F9561 /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		E6AC7F672395264B00131750 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		E6B5F296239669740023D6DC /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		E6B5F29823967D590023D6DC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E6B5F29A239697260023D6DC /* DimmingPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				E61B5844238FC955009F9561 /* Assets.xcassets */,
 				E6B5F296239669740023D6DC /* UIImageView+DownloadImage.swift */,
 				E61B585323901E45009F9561 /* SearchResultCell.swift */,
+				E6B5F29A239697260023D6DC /* DimmingPresentationController.swift */,
+				E6B5F29823967D590023D6DC /* DetailViewController.swift */,
 				E6AC7F672395264B00131750 /* LoadingCell.xib */,
 				E61B584F2390025B009F9561 /* SearchResult.swift */,
 				E61B58552390294B009F9561 /* NothingFoundCell.xib */,
@@ -153,8 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E61B5840238FC94A009F9561 /* SearchViewController.swift in Sources */,
+				E6B5F29B239697260023D6DC /* DimmingPresentationController.swift in Sources */,
 				E61B58502390025B009F9561 /* SearchResult.swift in Sources */,
 				E61B585423901E45009F9561 /* SearchResultCell.swift in Sources */,
+				E6B5F29923967D590023D6DC /* DetailViewController.swift in Sources */,
 				E61B583E238FC94A009F9561 /* AppDelegate.swift in Sources */,
 				E6B5F297239669740023D6DC /* UIImageView+DownloadImage.swift in Sources */,
 			);
