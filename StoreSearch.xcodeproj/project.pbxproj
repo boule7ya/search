@@ -24,6 +24,7 @@
 		E6C3F5602397BD0900FC0EB3 /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F55F2397BD0900FC0EB3 /* BounceAnimationController.swift */; };
 		E6C3F5622397C41300FC0EB3 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F5612397C41300FC0EB3 /* SlideOutAnimationController.swift */; };
 		E6C3F5642397C72D00FC0EB3 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F5632397C72D00FC0EB3 /* LandscapeViewController.swift */; };
+		E6E220C82398FD4B00DA3AE5 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E220C72398FD4B00DA3AE5 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E6C3F55F2397BD0900FC0EB3 /* BounceAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		E6C3F5612397C41300FC0EB3 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		E6C3F5632397C72D00FC0EB3 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		E6E220C72398FD4B00DA3AE5 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				E6C3F55D2397B8E300FC0EB3 /* GradientView.swift */,
 				E6877C602397FABD00A01387 /* FadeOutAnimationController.swift */,
 				E6C3F5632397C72D00FC0EB3 /* LandscapeViewController.swift */,
+				E6E220C72398FD4B00DA3AE5 /* Search.swift */,
 				E61B584F2390025B009F9561 /* SearchResult.swift */,
 				E61B585323901E45009F9561 /* SearchResultCell.swift */,
 				E61B583F238FC94A009F9561 /* SearchViewController.swift */,
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E220C82398FD4B00DA3AE5 /* Search.swift in Sources */,
 				E61B5840238FC94A009F9561 /* SearchViewController.swift in Sources */,
 				E6B5F29B239697260023D6DC /* DimmingPresentationController.swift in Sources */,
 				E6877C612397FABD00A01387 /* FadeOutAnimationController.swift in Sources */,
