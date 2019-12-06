@@ -1,4 +1,5 @@
 import UIKit
+import MessageUI
 
 class DetailViewController: UIViewController {
 
@@ -111,15 +112,14 @@ class DetailViewController: UIViewController {
     }
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK:- Navigation
+    override func prepare(for segue: UIStoryboardSegue,
+                          sender: Any?) {
+        if segue.identifier == "ShowMenu" {
+            let controller = segue.destination as! MenuViewController
+            controller.delegate = self
+        }
     }
-    */
 
 }
 
@@ -160,5 +160,29 @@ extension DetailViewController: UIGestureRecognizerDelegate {
         _ gestureRecognizer: UIGestureRecognizer,
         shouldReceive touch: UITouch) -> Bool {
         return (touch.view === self.view)
+    }
+}
+
+extension DetailViewController: MenuViewControllerDelegate {
+    func menuViewControllerSendEmail(_: MenuViewController) {
+        dismiss(animated: true) {
+            if MFMailComposeViewController.canSendMail() {
+            let controller = MFMailComposeViewController()
+            controller.setSubject(NSLocalizedString("Support Request",
+            comment: "Email subject"))
+            controller.setToRecipients(["your@email-address-here.com"])
+            controller.mailComposeDelegate = self
+            controller.modalPresentationStyle = .formSheet
+            self.present(controller, animated: true, completion: nil)
+            }
+        }
+    }
+}
+
+extension DetailViewController: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller:
+        MFMailComposeViewController, didFinishWith result:
+        MFMailComposeResult, error: Error?) {
+        dismiss(animated: true, completion: nil)
     }
 }
