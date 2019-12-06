@@ -254,6 +254,7 @@ extension LandscapeViewController: UIScrollViewDelegate {
                     as! DetailViewController
                 let searchResult = list[(sender as! UIButton).tag - 2000]
                 detailViewController.searchResult = searchResult
+                detailViewController.isPopUp = true
             }
         }
     }
